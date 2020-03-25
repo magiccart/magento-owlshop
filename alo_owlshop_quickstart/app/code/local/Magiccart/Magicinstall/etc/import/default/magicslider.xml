@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <magicslider>
+    <slide>
+      <title><![CDATA[Slide Home]]></title>
+      <identifier><![CDATA[]]></identifier>
+      <content><![CDATA[[{"url":"http:\/\/localhost\/alo_owlshop\/media\/magiccart\/magicslider\/\/o\/w\/owl_homepage1.jpg","file":"\/o\/w\/owl_homepage1.jpg","label":"","position":"1","disabled":0,"removed":0,"html":"<div class=\"banner-free text-slide\">\n<h2 class=\"oders caption1\">NEW COLLECTION<\/h2>\n<p class=\"ship caption2\">The best template for all Ecommerce platform! <\/p>\n<a href=\"#\" class=\"btn-shop caption3\">Shop Now<\/a>\n<\/div>","link":""},{"url":"http:\/\/localhost\/alo_owlshop\/media\/magiccart\/magicslider\/\/o\/w\/owl_homepage2.jpg","file":"\/o\/w\/owl_homepage2.jpg","label":"","position":"3","disabled":0,"removed":0,"html":"<div class=\"banner-free text-slide\">\n<h2 class=\"oders caption1\">NEW COLLECTION<\/h2>\n<p class=\"ship caption2\">The best template for all Ecommerce platform! <\/p>\n<a href=\"#\" class=\"btn-shop caption3\">Shop Now<\/a>\n<\/div>","link":""}]]]></content>
+      <status><![CDATA[1]]></status>
+      <config><![CDATA[]]></config>
+    </slide>
+  </magicslider>
+</root>

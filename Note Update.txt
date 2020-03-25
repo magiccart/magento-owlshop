@@ -1,0 +1,22 @@
+11/09/2015
+
+app/design/frontend/aloowlshop/default/template/catalog/layer/view.phtml
+app/design/frontend/aloowlshop/default/template/page/2columns-left.phtml
+js/magiccart/jquery.alothemes.js
+skin/frontend/aloowlshop/default/css/styles.css
+skin/frontend/aloowlshop/default/css/responsive.css
+skin/frontend/aloowlshop/default/magiccart/magicshop/css/ajaxcart.css
+
++Update security patch APPSEC-1034
+APPSEC-1034: unzip APPSEC-1034.zip after upload to root magento
+
+12/04/2015
+
+Fix bug from_key in register 1.9.2.2 => remove folder: app\design\frontend\aloowlshop\default\template\persistent
+
+12/22/2015
+Update security patches: If you use version old theme can download here: http://alothemes.com/themeforest/security/owlshop/supee-6788.zip
+
+05/18/2016
+1.Update feature menu dropdown
+2. remove file app\design\frontend\aloowlshop\default\template\catalog\product\price.phtml

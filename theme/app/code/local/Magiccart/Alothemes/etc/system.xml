@@ -1,0 +1,690 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart<team.magiccart@gmail.com>
+ * @@Create Date: 2014-06-07 12:27:23
+ * @@Modify Date: 2015-05-11 21:51:25
+ * @@Function:
+ */ 
+-->
+<config>
+    <tabs>
+        <magiccart translate="label comment">
+            <label>Magiccart</label>
+            <sort_order>100</sort_order>
+        </magiccart>
+    </tabs>
+    <sections>
+        <alothemes translate="label comment" module="alothemes">
+            <label>ALO Themes</label>
+            <tab>magiccart</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>General Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                       <enabled translate="label comment">
+                            <label>Enabled: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </enabled>
+                        <jquery translate="label comment">
+                            <label>Add jQuery: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </jquery>
+<!--                         <tooltip translate="label comment">
+                            <label>Enable Tooltip: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </tooltip>
+                        <boxed_layout_enable translate="label comment">
+                            <label>Enable Layout Boxed: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </boxed_layout_enable>
+                        <themecolor translate="label comment">
+                            <label>Theme Color: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>alothemes/system_config_source_themecolor</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </themecolor>
+                        <ajaxloading translate="label comment">
+                            <label>Ajax Loading</label>
+                            <comment>Allowed file types: jpg, jpeg, gif, png.</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">magiccart</upload_dir>
+                            <base_url type="media" scope_info="1">magiccart</base_url>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ajaxloading>
+                        <background translate="label comment">
+                            <label>Background Site</label>
+                            <comment>Allowed file types: jpg, jpeg, gif, png.</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">magiccart</upload_dir>
+                            <base_url type="media" scope_info="1">magiccart</base_url>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background> -->
+                    </fields>                   
+                </general>
+<!--                 <home>
+                    <label>Display in Home</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_home translate="label comment">
+                            <label>Setting Home</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_home>
+                        <background translate="label comment">
+                            <label>Background</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">md/quickview</upload_dir> 
+                            <base_url type="media" scope_info="1">md/quickview</base_url>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </background>
+                    </fields>    
+                </home> -->
+                <list>
+                    <label>Display products on Category</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_product translate="label comment">
+                            <label>Setting Display Products on Device</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_product>
+                        <widthImages translate="label comment">
+                            <label>Width of Images: </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </widthImages>
+                        <heightImages translate="label comment">
+                            <label>Height of Images: </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heightImages>  
+                    </fields>    
+                </list>
+                <detail>
+                    <label>Display in Page Product Detail</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_zoom translate="label comment">
+                            <label>Setting product Zoom Images</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_zoom>
+                        <zoomInner translate="label comment">
+                            <label>Zoom Inner: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </zoomInner>
+                        <zoomWidth translate="label comment">
+                            <label>Zoom Width: </label>
+                            <frontend_type>text</frontend_type>
+                            <depends><zoomInner>0</zoomInner></depends>
+                            <validate>required-entry validate-greater-than-zero</validate>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </zoomWidth>
+                        <zoomHeight translate="label comment">
+                            <label>Zoom Height: </label>
+                            <frontend_type>text</frontend_type>
+                            <depends><zoomInner>0</zoomInner></depends>
+                            <validate>required-entry validate-greater-than-zero</validate>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </zoomHeight>
+<!--                         <adjustX translate="label comment">
+                            <label>adjust X: </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </adjustX>
+                        <adjustY translate="label comment">
+                            <label>adjust Y: </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </adjustY> -->
+                        <lightBox translate="label comment">
+                            <label>LightBox: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <comment>Popup image while click to image</comment>
+                        </lightBox>
+                        
+                        <heading_images translate="label comment">
+                            <label>Setting Product Images</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_images> 
+                        <imageWidth translate="label comment">
+                            <label>Image Width: </label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-greater-than-zero</validate>
+                            <sort_order>65</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </imageWidth>
+                        <imageHeight translate="label comment">
+                            <label>Image Height: </label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-greater-than-zero</validate>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <comment>If empty height is auto</comment>
+                        </imageHeight>
+                        <thumbWidth translate="label comment">
+                            <label>Thumbnail Image Width: </label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-greater-than-zero</validate>
+                            <sort_order>75</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </thumbWidth>
+                        <thumbHeight translate="label comment">
+                            <label>Thumbnail Image Height: </label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-greater-than-zero</validate>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                            <!-- <comment>If empty height is auto</comment> -->
+                        </thumbHeight>                        
+                        <heading_other translate="label comment">
+                            <label>Setting Other</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_other>  
+                        <thumbSlide translate="label comment">
+                            <label>Use slider for thumbnail image: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>alothemes/system_config_source_slide</source_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                        </thumbSlide>    
+                        <relatedSlide translate="label comment">
+                            <label>Use slider for Related: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>alothemes/system_config_source_slide</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                        </relatedSlide>
+<!--                         <relatedLimit translate="label comment">
+                            <label>Related Limit: </label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-greater-than-zero</validate>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </relatedLimit>  -->    
+                        <upsellSlide translate="label comment">
+                            <label>Use slider for Upsell: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>alothemes/system_config_source_slide</source_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                        </upsellSlide> 
+<!--                         <upsellLimit translate="label comment">
+                            <label>Upsell Limit: </label>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-greater-than-zero</validate>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>1</show_in_store>
+                            <show_in_website>1</show_in_website>
+                        </upsellLimit> -->
+                        <inforTabs translate="label comment">
+                            <label>Use Tabs for product info: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </inforTabs>
+                        <activeTab translate="label comment">
+                            <label>Tab active default: </label>
+                            <depends><inforTabs>1</inforTabs></depends>
+                            <frontend_type>select</frontend_type>
+                            <source_model>alothemes/system_config_source_tab</source_model>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                        </activeTab>                    
+                    </fields>
+                </detail>
+                <checkout>
+                    <label>Display in Page Checkout</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_checkout translate="label comment">
+                            <label>Setting:</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_checkout> 
+                        <crosssellsSlide translate="label comment">
+                            <label>Use slider for Cross-sells: </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </crosssellsSlide>
+                    </fields>
+                </checkout>
+                <color>
+                    <label>Color Theme</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+                        <!-- Config Text Color -->
+                        <heading_page_color translate="label comment">
+                            <label>Page Color</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>260</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_page_color>
+                        <page_color translate="label comment">
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </page_color>
+                        <page_background translate="label comment">
+                            <label>Background Page: </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </page_background>   
+                        <link_color translate="label comment">
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </link_color>
+                        <link_color_hover translate="label comment">
+                            <label>Link Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </link_color_hover>
+                        <link_color_active translate="label comment">
+                            <label>Link Active Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </link_color_active>
+
+                        <!-- Config Button Color -->
+                        <heading_buttons_color translate="label comment">
+                            <label>Buttons</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_buttons_color>
+                        <button_color translate="label comment">
+                            <label>Button Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </button_color>
+                        <button_color_hover translate="label comment">
+                            <label>Button Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </button_color_hover>
+                        <button_background translate="label comment">
+                            <label>Button Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </button_background>
+                        <button_background_hover translate="label comment">
+                            <label>Button Background Hover Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </button_background_hover>
+                        
+                        <!-- Config Product Labels Color -->
+                        <heading_labels translate="label comment">
+                            <label>Product Labels</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_labels>
+                        <labelnew_color translate="label comment">
+                            <label>Label "New" Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </labelnew_color>
+                        <labelnew_background translate="label comment">
+                            <label>Label "New" Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </labelnew_background>
+                        <labelsale_color translate="label comment">
+                            <label>Label "Sale" Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </labelsale_color>
+                        <labelsale_background translate="label comment">
+                            <label>Label "Sale" Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>190</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </labelsale_background>
+                    </fields>    
+                </color>
+                <font translate="label comment">
+                    <label>Font</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <size translate="label comment">
+                            <label>Basic Font Size</label>
+                            <comment>Size of the regular text. Font size of most of the other elements will be calculated relative to this value.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>alothemes/system_config_source_design_font_size</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>font-size</validate>
+                        </size>
+                        <google translate="label comment">
+                            <label>Headings Font Family - Google Fonts</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>alothemes/system_config_source_design_font_google</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>mc-fonts</validate>
+                        </google>
+                    </fields>
+                </font>
+              <newsletter translate="label comment">
+                    <label>Newsletter Popup</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>80</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_general translate="label comment">
+                            <label>Setting Newsletter</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_general>
+                        <enabled translate="label comment">
+                            <label>Enabled : </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                        </enabled>
+                        <firstOnly translate="label comment">
+                            <label>First only display : </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                        </firstOnly>
+						<width translate="label comment">
+                            <label>Width Popup :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>validate-greater-than-zero</validate>
+                        </width>
+                        <height translate="label comment">
+                            <label>Height Popup :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>validate-greater-than-zero</validate>
+                        </height>
+<!--                         <infotext translate="label comment">
+                            <label>Info Text</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </infotext>
+                        <texteditor translate="label comment">
+                            <label>Info TextEditor</label>
+                            <frontend_type>editor</frontend_type>
+                            <frontend_model>alothemes/adminhtml_system_config_editor</frontend_model>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </texteditor> -->
+                        <overlayColor translate="label comment">
+                            <label>Overlay Color :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                        </overlayColor>
+                        <background_color translate="label comment">
+                            <label>Background Color :</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color</validate>
+                            <comment>Background Color for Newsletter</comment>
+                        </background_color>
+                        <background_image translate="label comment">
+                            <label>Background Image :</label>
+                            <comment>Allowed file types: jpg, jpeg, gif, png.</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">magiccart</upload_dir>
+                            <base_url type="media" scope_info="1">magiccart</base_url>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <show_in_store>1</show_in_store>
+                            <comment>Background Image for Newsletter</comment>
+                        </background_image>
+                    </fields>
+                </newsletter>
+            </groups>
+        </alothemes>
+    </sections>
+</config>
+

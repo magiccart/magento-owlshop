@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: Magiccart<team.magiccart@gmail.com>
+ * @@Create Date: 2014-06-07 12:27:23
+ * @@Modify Date: 2015-11-03 17:57:23
+ * @@Function:
+ */ 
+-->
+<config>
+	<modules>
+		<Magiccart_Alothemes>
+			<version>1.0</version>
+		</Magiccart_Alothemes>
+	</modules>
+	<frontend>
+		<routers>
+			<alothemes>
+				<use>stardard</use>
+				<args>
+					<module>Magiccart_Alothemes</module>
+					<frontName>alothemes</frontName>
+				</args>
+			</alothemes>
+		</routers>
+		<layout>
+			<updates>
+				<alothemes>
+					<file>magiccart/alothemes.xml</file>
+				</alothemes>
+			</updates>
+		</layout>
+	</frontend>
+	<admin>
+		<routers>
+<!-- 			<alothemes>
+				<use>admin</use>
+				<args>
+					<module>Magiccart_Alothemes</module>
+					<frontName>alothemes</frontName>
+				</args>
+			</alothemes> -->
+            <adminhtml>
+                <args>
+                    <modules>
+                        <alothemes after="Mage_Adminhtml">Magiccart_Alothemes</alothemes>
+                    </modules>
+                </args>
+            </adminhtml>
+		</routers>
+	</admin>
+	<adminhtml>
+		<layout>
+			<updates>
+				<alothemes>
+					<file>magiccart/alothemes.xml</file>
+				</alothemes>
+			</updates>
+		</layout>
+	</adminhtml>
+	<global>
+		<models>
+			<alothemes>
+				<class>Magiccart_Alothemes_Model</class>
+				<resourceModel>alothemes_mysql4</resourceModel>
+			</alothemes>
+			<alothemes_mysql4>
+				<class>Magiccart_Alothemes_Model_Mysql4</class>
+			</alothemes_mysql4>
+		</models>
+		<resources>
+			<alothemes_setup>
+				<setup>
+					<module>Magiccart_Alothemes</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</alothemes_setup>
+			<alothemes_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</alothemes_write>
+			<alothemes_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</alothemes_read>
+		</resources>
+		<blocks>
+			<alothemes>
+				<class>Magiccart_Alothemes_Block</class>
+			</alothemes>
+		</blocks>
+		<helpers>
+			<alothemes>
+				<class>Magiccart_Alothemes_Helper</class>
+			</alothemes>
+		</helpers>
+	</global>
+    <default>
+        <alothemes>
+            <general>
+                <enabled>1</enabled>
+                <jquery>1</jquery>
+                <boxed_layout_enable>1</boxed_layout_enable>
+            </general>
+            <home>
+            </home>
+            <list>
+                <portrait>1</portrait>
+                <landscape>2</landscape>
+                <tablet>3</tablet>
+                <visibleItems>6</visibleItems>
+                <margin_columns>10</margin_columns>
+                <productDelay>500</productDelay>
+                <height_images>250</height_images>
+                <width_images>200</width_images>
+                <action>cart,compare,wishlist</action>
+                <sort_name>asc</sort_name>
+            </list>
+            <detail>
+            	<imageWidth>900</imageWidth>
+            	<!-- <imageHeight>256</imageHeight> -->
+            	<zoomWidth>350</zoomWidth>
+            	<zoomHeight>350</zoomHeight>
+            	<zoomInner>1</zoomInner>
+            	<lightBox>1</lightBox>
+            	<adjustX>10</adjustX>
+            	<adjustY>0</adjustY>
+            	<showTitle>1</showTitle>
+            	<useWrapper>0</useWrapper>
+            	<thumbSlide>horizontal</thumbSlide> <!-- option: 0 or horizontal, vertical -->
+            	<relatedSlide>horizontal</relatedSlide> <!-- option: 0 or horizontal, vertical -->
+				<relatedLimit>10</relatedLimit>
+            	<upsellSlide>horizontal</upsellSlide> <!-- option: 0 or horizontal, vertical -->
+				<upsellLimit>10</upsellLimit>
+				<inforTabs>1</inforTabs>
+				<activeTab>box-up-sell</activeTab> <!-- box-description, or box-additional,box-up-sell,box-tags -->
+            </detail>
+            <checkout>
+            	<crosssellsSlide>1</crosssellsSlide>
+            </checkout>
+            <color>
+            	<page_color>#333</page_color>
+            	<page_background>#fff</page_background>
+            	<link_color>#333</link_color>
+            	<link_color_hover>#ea5648</link_color_hover>
+            	<link_color_active>#ea5648</link_color_active>
+            	<button_color>#333</button_color>
+            	<button_color_hover>#ffffff</button_color_hover>
+            	<button_background>#fff</button_background>
+            	<button_background_hover>#333</button_background_hover>
+            	<labelnew_color>#fff</labelnew_color>
+            	<labelnew_background>#333333</labelnew_background>
+            	<labelsale_color>#fff</labelsale_color>
+            	<labelsale_background>#333333</labelsale_background>
+            </color>
+            <font>
+            	<size>13px</size>
+            	<google>Montserrat</google>
+            </font>
+            <newsletter>
+                <enabled>1</enabled>
+				<firstOnly>0</firstOnly>
+                <width>700</width>
+                <height>438</height>
+                <overlayColor>#353535</overlayColor>
+                <background_color>#f2f2f2</background_color>
+                <background_image></background_image>
+            </newsletter>
+    	</alothemes>
+    </default>
+</config>
+

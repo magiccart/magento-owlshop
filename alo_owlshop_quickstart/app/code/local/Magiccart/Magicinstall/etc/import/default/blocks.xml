@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title><![CDATA[Footer Links]]></title>
+      <identifier><![CDATA[footer_links]]></identifier>
+      <content><![CDATA[<ul>
+<li><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>
+<li><a href="{{store direct_url="customer-service"}}">Customer Service</a></li>
+<li class="last privacy"><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Cookie restriction notice]]></title>
+      <identifier><![CDATA[cookie_restriction_notice_block]]></identifier>
+      <content><![CDATA[<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Slide Home]]></title>
+      <identifier><![CDATA[slide]]></identifier>
+      <content><![CDATA[<div>{{widget type="magicslider/widget_slide" slide_id="1" easing="easeInSine" controls="1" pause="4000" speed="500" width="1899" height="801" template="magiccart/magicslider/magicslider.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[alo-block-shipping]]></title>
+      <identifier><![CDATA[alo-block-shipping]]></identifier>
+      <content><![CDATA[<div class="banner-free">
+<div class="text-banner-free">
+<h2 class="oders">original menswear</h2>
+<p class="ship">Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos </p>
+<a class="btn-shop" href="#">Shop Now</a>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[alo-products]]></title>
+      <identifier><![CDATA[alo-products]]></identifier>
+      <content><![CDATA[<div class="block-title featured-title">
+<h2><span class="title-top">FEATURED PRODUCTS</span><span class="title-backgruond">F</span></h2>
+<div class="border-icon"><span>&nbsp;</span></div>
+</div>
+<div class="featured-home">{{widget type="magicproduct/widget_magicproduct" template="magiccart/magicproduct/magicproduct.phtml" types="bestseller,mostviewed,random,saleproduct" active="random" limit="10" slide="1" scroll="left" autoPlaySpeed="3000" row="1" enableResponsiveBreakpoints="1" portrait="1" landscape="2" tablet="3" desktop="3" visibleItems="4" marginColumn="30" widthImages="276" heightImages="359" action="cart,compare,wishlist,review"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_bottom]]></title>
+      <identifier><![CDATA[block_footer_bottom]]></identifier>
+      <content><![CDATA[<div class="row">
+	<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12">
+		<div class="collapsible mobile-collapsible">
+		<h3 class="block-title heading">INFORMATION</h3>
+		    <span style="display: none;" class="toggle-tab mobile"><span class="hidden">hidden</span></span>
+			<div class="block-content block-content-statick toggle-content">
+				<ul class="bullet">
+					<li><a href="{{store direct_url="about"}}">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Terms &amp; condition</a></li>
+					<li><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+					<li><a href="#">Orders and Returns</a></li>
+					<li><a href="#">Site Map</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12">
+		<div class="collapsible mobile-collapsible">
+		<h3 class="block-title heading">WHY CHOOSE</h3>
+			<span style="display: none;" class="toggle-tab mobile"><span class="hidden">hidden</span></span>
+			<div class="block-content block-content-statick toggle-content">
+				<ul class="bullet">
+					<li><a href="#">Product Recall</a></li>
+					<li><a href="#">Gift Vouchers</a></li>
+					<li><a href="#">Returns and Exchanges</a></li>
+					<li><a href="#">Shipping Options</a></li>
+					<li><a href="#">Help & FAQs</a></li>
+					<li><a href="#">Sale Only Today</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12">
+		<div class="collapsible mobile-collapsible">
+		<h3 class="block-title heading">MY ACCOUNT</h3>
+			<span style="display: none;" class="toggle-tab mobile"><span class="hidden">hidden</span></span>
+			<div class="block-content block-content-statick toggle-content">
+				<ul class="bullet">
+					<li><a href="#">Sign In</a></li>
+					<li><a href="#">View Cart</a></li>
+					<li><a href="#">My Wishlist</a></li>
+					<li><a href="#">Check out</a></li>
+					<li><a href="#">Track My Order</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3  col-md-3  col-sm-3  col-xs-12">
+		<div class="collapsible mobile-collapsible">
+		<h3 class="block-title heading">FOLLOW US</h3>
+			<span style="display: none;" class="toggle-tab mobile"><span class="hidden">hidden</span></span>
+			<div class="block-content block-content-statick toggle-content">
+			    <div class="block-newletter">{{block type="newsletter/subscribe" template="newsletter/subscribe.phtml"}}</div>
+				<ul class="list-inline">
+					<li><a class="social-link" href="#"><i class="fa fa-facebook"><span class="hidden">facebook</span></i></a></li>
+					<li><a class="social-link" href="#"><i class="fa fa-twitter"><span class="hidden">twitter</span></i></a></li>
+					<li><a class="social-link" href="#"><i class="fa fa-youtube"><span class="hidden">youtube</span></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[block_footer_top]]></title>
+      <identifier><![CDATA[block_footer_top]]></identifier>
+      <content><![CDATA[<div class="signup-footer">
+<div class="sign-left">
+<h2>sign up and get 20% off</h2>
+<p>Be the first to know about the latest fashion new and get exclusive offers</p>
+</div>
+<div class="sign-right">
+<a href="#">Sign up</a>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Block Sale Product]]></title>
+      <identifier><![CDATA[block_sale_product]]></identifier>
+      <content><![CDATA[<div class="sale-content">
+<div class="block-title">
+<h2><span class="title-top">Top Sale</span><span class="title-backgruond">S</span></h2>
+<div class="border-icon"><span>&nbsp;</span></div>
+</div>
+{{widget type="magicproduct/widget_magicproduct" template="magiccart/magicproduct/magicproduct.phtml" types="bestseller" active="bestseller" limit="10" slide="1" scroll="left" autoplay="1" autoPlaySpeed="3000" pauseOnHover="1" row="1" enableResponsiveBreakpoints="1" portrait="1" landscape="2" tablet="3" desktop="4" visibleItems="4" marginColumn="30" widthImages="276" heightImages="359" action="cart,compare,wishlist"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Block menu description]]></title>
+      <identifier><![CDATA[block_menu_description]]></identifier>
+      <content><![CDATA[<p>Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed...</p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Block banner menu Right]]></title>
+      <identifier><![CDATA[block_menu_right]]></identifier>
+      <content><![CDATA[<div class="banner-menu">
+<div class="banner-menu-left"><a href="#"><img alt="" src="{{media url="wysiwyg/alothemes/static/banner-menu1.png"}}" /></a></div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Block Menu Bottom]]></title>
+      <identifier><![CDATA[block-menu-bottom]]></identifier>
+      <content><![CDATA[<div><img class="img-responsive" alt="megamenu" src="{{media url="wysiwyg/alothemes/static/menu-bottom.png"}}" /></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </blocks>
+</root>
